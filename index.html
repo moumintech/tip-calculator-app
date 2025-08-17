@@ -12,6 +12,8 @@
     />
 
     <title>Frontend Mentor | Tip calculator app</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <main>
@@ -44,17 +46,26 @@
               class="people-input"
             />
           </div>
-        
-
-        <div class="right-panel">Tip Amount / person Total / person Reset</div>
+          </div>
+        <div class="right-panel">
+          <h1> Tip Amount <span class="person">/ person</span></h1>
+          <div> 
+          <img src="./images/icon-dollar.svg">
+          <input type="number"  placeholder="0" class="tip-amount">
+          </div>
+          <div> 
+          <h1>Total <span class="person">/ person </span></h1>
+          <input type="number"  placeholder="0" class="total-amount">
+          </div>
+          <div> 
+            <button class="reset" data-reset>Reset</button>
+            </div>
+        </div>
+        </div>
+          
       </section>
     </main>
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Zamzam.M</a>.
-    </div>
+   
     <script src="script.js"></script>
   </body>
 </html>
