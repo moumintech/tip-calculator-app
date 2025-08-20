@@ -7,37 +7,58 @@ body {
   font-family: "Space Mono", monospace;
   font-weight: 700;
   background-color: hsl(185, 41%, 84%);
-  background-image: url(images/logo.svg);
+  background-image: url;
 }
 main {
   background-color: hsl(185, 41%, 84%);
+  height: 100vh;
+  margin: 80px auto;
+  width: min(800px, 50%);
+  padding: 0;
 }
 section {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
-  width: min(900px, 100%);
-  margin: 0 auto;
-  height: 100vh;
+  width: 750px;
+  height: 100%;
+  margin: 0;
+  padding: 1rem;
   place-items: center;
   background-color: hsl(0, 100%, 100%);
   border: 1px solid transparent;
   border-radius: 15px;
 }
 .right-panel {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
   background-color: hsl(183, 100%, 15%);
   border: 1px solid transparent;
-  border-radius: 15px;
-  padding: 2rem;
+  border-radius: 8px;
+  padding: 1rem;
+  position: relative;
 }
-.tip-amount,
+.totals-person,
+.amount-person {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.tip-amounts,
 .total {
-  color: hsl(189, 47%, 97%);
+  background-color: hsl(183, 100%, 15%);
+  font-size: medium;
+  font-weight: bold;
+  border: none;
 }
 .person {
   display: block;
   color: hsl(184, 14%, 56%);
-  font-weight: 100;
+  font-size: x-small;
   font-size: 15px;
 }
 .reset {
@@ -47,4 +68,41 @@ section {
   background-color: hsl(172, 67%, 45%);
   color: hsl(183, 100%, 15%);
   padding: 0.5rem 2rem;
+}
+h1 {
+  color: hsl(186, 14%, 43%);
+}
+.bill {
+  border: 1px solid transparent;
+  border-radius: 8px;
+  background-color: hsl(185, 41%, 84%);
+}
+button,
+.custom-tip-input {
+  border: 1px solid transparent;
+  border-radius: 10px;
+  background-color: hsl(183, 100%, 15%);
+  padding: 0.5rem 1rem;
+}
+.people {
+  border: 1px solid transparent;
+  border-radius: 8px;
+  background-color: hsl(185, 41%, 84%);
+}
+input {
+  font-weight: bolder;
+  width: 80px;
+  height: 90px;
+  font-size: 1.5rem;
+  padding: 5px;
+  border: none;
+  outline: none;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
 }
