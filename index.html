@@ -12,8 +12,11 @@
     />
 
     <title>Frontend Mentor | Tip calculator app</title>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <main>
@@ -38,35 +41,33 @@
             />
           </div>
           <h1>Number of People</h1>
-          <div class="people">
-            <img src="./images/icon-person.svg" alt="Person Icon" />
-            <input
-              type="number"
-              placeholder="0"
-              class="people-input"
-            />
-          </div>
-          </div>
+          <img src="./images/icon-person.svg" alt="Person Icon" />
+          <input type="number" placeholder="0" class="people-input" />
+        </div>
+
         <div class="right-panel">
-          <h1 class="tip-amounts"> Tip Amount <span class="person">/ person</span></h1>
-          <div class="amount-person"> 
-          <img src="./images/icon-dollar.svg">
-          <input type="number"  placeholder="0" class="tip-amount" >
+          <h1 class="title-tip">
+            Tip Amount <span class="person">/ person</span>
+          </h1>
+          <div class="amount-person">
+            <img src="./images/icon-dollar.svg" />
+            <input type="number" placeholder="0" class="tip-amount" />
           </div>
-         
-          <h1 class="total">Total <span class="person">/ person </span></h1>
-           <div class="totals-person"> 
-          <input type="number"  placeholder="0" class="total-amount">
+
+          <h1 class="title-total">
+            Total <span class="person">/ person </span>
+          </h1>
+          <div class="totals-person">
+            <img src="./images/icon-dollar.svg" class="icon-dolar" />
+            <input type="number" placeholder="0" class="total-amount" />
           </div>
-          <div> 
+          <div class="buttons">
             <button class="reset" data-reset>Reset</button>
-            </div>
+          </div>
         </div>
-        </div>
-          
       </section>
     </main>
-   
+
     <script src="script.js"></script>
   </body>
 </html>
