@@ -21,7 +21,7 @@ section {
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
   width: 750px;
-  height: 100%;
+  height: auto;
   margin: 0;
   padding: 1rem;
   place-items: center;
@@ -30,11 +30,13 @@ section {
   border-radius: 15px;
 }
 .right-panel {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
   width: 100%;
   height: 100%;
   overflow: hidden;
+  position: relative;
   background-color: hsl(183, 100%, 15%);
   border: 1px solid transparent;
   border-radius: 8px;
@@ -62,6 +64,13 @@ section {
   font-size: 15px;
 }
 .reset {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  font-size: 1.2rem;
+  font-weight: bold;
+
+  width: 100%;
   margin-top: 2rem;
   border: 1px solid transparent;
   border-radius: 15px;
@@ -84,20 +93,21 @@ button,
   background-color: hsl(183, 100%, 15%);
   padding: 0.5rem 1rem;
 }
-.people {
-  border: 1px solid transparent;
-  border-radius: 8px;
-  background-color: hsl(185, 41%, 84%);
-}
-input {
+
+.tip-amount,
+.total-amount,
+.icon-dollar {
   font-weight: bolder;
   width: 80px;
   height: 90px;
   font-size: 1.5rem;
+  color: hsl(172, 67%, 45%);
   padding: 5px;
   border: none;
   outline: none;
+  background-color: hsl(183, 100%, 15%);
 }
+
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
