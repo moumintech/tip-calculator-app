@@ -90,7 +90,7 @@ button,
 .custom-tip-input {
   border: 1px solid transparent;
   border-radius: 10px;
-  background-color: hsl(183, 100%, 15%);
+  background-color: hsl(184, 14%, 56%);
   padding: 0.5rem 1rem;
 }
 
@@ -112,7 +112,4 @@ input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
-}
-input[type="number"] {
-  -moz-appearance: textfield;
 }
