@@ -82,9 +82,21 @@ h1 {
   color: hsl(186, 14%, 43%);
 }
 .bill {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
   border: 1px solid transparent;
   border-radius: 8px;
   background-color: hsl(185, 41%, 84%);
+}
+.bill input {
+  display: flex;
+  justify-content: flex-end;
+  background-color: hsl(185, 41%, 84%);
+  border: none;
+  outline: none;
+  padding: 0.5rem;
 }
 button,
 .custom-tip-input {
