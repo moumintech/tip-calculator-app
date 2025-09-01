@@ -90,7 +90,7 @@ h1 {
   border-radius: 8px;
   background-color: hsl(185, 41%, 84%);
 }
-.bill input {
+.bill-input {
   display: flex;
   justify-content: flex-end;
   background-color: hsl(185, 41%, 84%);
