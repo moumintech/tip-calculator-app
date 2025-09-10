@@ -101,7 +101,7 @@ h1 {
 button,
 .custom-tip-input {
   border: 1px solid transparent;
-  border-radius: 10px;
+  border-radius: 15px;
   background-color: hsl(184, 14%, 56%);
   padding: 0.5rem 1rem;
 }
