@@ -82,15 +82,18 @@ h1 {
   color: hsl(186, 14%, 43%);
 }
 .bill {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1rem;
+  /*
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   border: 1px solid transparent;
   border-radius: 8px;
-  background-color: hsl(185, 41%, 84%);
+  background-color: hsl(185, 41%, 84%);*/
 }
-.bill-input {
+*/ .bill-input {
   display: flex;
   justify-content: flex-end;
   background-color: hsl(185, 41%, 84%);
