@@ -27,23 +27,26 @@
             <img src="./images/icon-dollar.svg" alt="Dollar Icon" />
             <input type="number" placeholder="0" class="bill-input" />
           </div>
-          </div>
+
           <h1>Select Tip %</h1>
           <div class="tip-buttons">
-            <button class="tip-button" data-tip="0">0%</button>
-            <button class="tip-button" data-tip="0">0%</button>
-            <button class="tip-button" data-tip="0%">0%</button>
-            <button class="tip-button" data-tip="0">0%</button>
-            <button class="tip-button" data-tip="0">0%</button>
-            <input
+            <button class="tip-button" data-tip="5">5%</button>
+            <button class="tip-button" data-tip="15">10%</button>
+            <button class="tip-button" data-tip="15">15%</button>
+            <button class="tip-button" data-tip="25%">25%</button>
+            <button class="tip-button" data-tip="50">50%</button>
+            <button
               type="number"
-              placeholder="Custom"
+              placeholder="Custum"
               class="custom-tip-input"
-            />
+              min="0"
+            ></button>
           </div>
           <h1>Number of People</h1>
-          <img src="./images/icon-person.svg" alt="Person Icon" />
-          <input type="number" placeholder="0" class="people-input" />
+          <div class="people">
+            <img src="./images/icon-person.svg" alt="Person Icon" />
+            <input type="number" placeholder="0" class="people-input" />
+          </div>
         </div>
 
         <div class="right-panel">
