@@ -60,6 +60,12 @@ section {
   padding: 0.75rem 1rem;
   border-radius: 0.5rem;
 }
+.bill:focus-within,
+.bill input:not(:placeholder-shown),
+.people:focus-within,
+.people input:not(:placeholder-shown) {
+  border-color: hsl(172, 67%, 45%);
+}
 
 .bill input,
 .people input {
