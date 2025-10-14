@@ -8,12 +8,10 @@ const tipAmountEl = document.querySelector(".tip-amount");
 const totalEl = document.querySelector(".total-amount");
 const resetBtn = document.querySelector(".reset");
 
-// État
 let bill = 0;
 let people = 0;
-let tipPercent = null; // aucun tip sélectionné au départ
+let tipPercent = null;
 
-// Helpers
 const money = (n) => (Number.isFinite(n) ? n.toFixed(2) : "0.00");
 
 function updateOutputs(tipPP = 0, totalPP = 0) {
@@ -53,7 +51,6 @@ function setActive(btn) {
   if (btn) btn.classList.add("active");
 }
 
-// Events: bill / people
 billInput.addEventListener("input", (e) => {
   bill = parseFloat(e.target.value) || 0;
   calc();
@@ -65,7 +62,6 @@ peopleInput.addEventListener("input", (e) => {
   calc();
 });
 
-// Events: tip buttons
 tipBtns.forEach((btn) => {
   btn.addEventListener("click", () => {
     tipPercent = parseFloat(btn.dataset.tip); // 5,10,15,25,50
@@ -75,7 +71,6 @@ tipBtns.forEach((btn) => {
   });
 });
 
-// Event: custom tip
 customInput.addEventListener("input", (e) => {
   const v = parseFloat(e.target.value);
   tipPercent = Number.isFinite(v) ? Math.max(0, v) : null;
@@ -83,7 +78,6 @@ customInput.addEventListener("input", (e) => {
   calc();
 });
 
-// Reset
 resetBtn.addEventListener("click", () => {
   bill = 0;
   people = 0;
@@ -96,7 +90,6 @@ resetBtn.addEventListener("click", () => {
   syncResetState();
 });
 
-// Initial UI
 billInput.value = "0";
 peopleInput.value = "0";
 updateOutputs(0, 0);
