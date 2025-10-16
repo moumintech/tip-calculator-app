@@ -38,4 +38,4 @@ This is project allow users to view the optimal layout for the app dependding on
 
 ## Deloy
 
-You can view the live demo here: [Live Site]
+You can view the live demo here: [Live Site](https://tip-calculato.netlify.app/)
