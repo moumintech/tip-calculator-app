@@ -31,10 +31,14 @@ main {
   margin: 0 auto;
   padding: 2rem 1rem;
 }
-
+main .logo {
+  display: block;
+  margin: 0 auto 2rem;
+}
 section {
   background: var(--white);
   border-radius: 1.25rem;
+  margin-top: 3rem;
   padding: 2rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
