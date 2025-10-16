@@ -2,18 +2,11 @@
 
 ![Design preview for the Tip calculator app coding challenge](./preview.jpg)
 
-## Welcome! 👋
-
-[Frontend Mentor](https://www.frontendmentor.io)
-
 ## Table of Contents
 
 - [Overview](#overview)
 - [Features](#features)
 - [Tech Stack](#tech-stack)
-- [How I Solved It](#how-i-solved-it)
-  - [CSS Architecture](#css-architecture)
-  - [Biggest Challenge](#biggest-challenge)
 - [Deploy](#deploy)
 
 ## Overview
